@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:layout_gravity="top"
+        android:id="@+id/drag_button"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_drag"
+        android:tint="@android:color/holo_blue_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:id="@+id/leftDetailArrow"
+            android:src="@drawable/left"
+            android:layout_gravity="start"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"/>
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/property_details_vp"/>
+
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:id="@+id/rightDetailArrow"
+            android:src="@drawable/right"
+            android:layout_gravity="end"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

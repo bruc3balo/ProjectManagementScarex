@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="30dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/goToTv"
+            android:text="Go to:"
+            android:drawablePadding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:drawableStart="@drawable/minus"/>
+
+        <LinearLayout
+            android:id="@+id/goToLayout"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:layout_gravity="center"
+                android:numColumns="5"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/propertyNameTv"
+            android:drawablePadding="10dp"
+            android:text="Property Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:drawableStart="@drawable/minus"/>
+
+        <LinearLayout
+            android:id="@+id/propertyNameLayout"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/search_view_round_bg"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/purchasePriceTv"
+            android:drawablePadding="10dp"
+            android:text="Purchase price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:drawableStart="@drawable/minus"/>
+
+        <LinearLayout
+            android:id="@+id/purchasePriceLayout"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:background="@color/semiBlack"/>
+
+            <LinearLayout
+                android:layout_margin="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:gravity="end|center_vertical"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/areaTv"
+            android:drawablePadding="10dp"
+            android:text="Area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:drawableStart="@drawable/minus"/>
+
+        <LinearLayout
+            android:id="@+id/areaLayout"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/locationTv"
+            android:drawablePadding="10dp"
+            android:text="Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:drawableStart="@drawable/minus"/>
+
+        <LinearLayout
+            android:id="@+id/locationLayout"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/propertyStyleTv"
+            android:drawablePadding="10dp"
+            android:text="Property Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:drawableStart="@drawable/minus"/>
+
+        <LinearLayout
+            android:id="@+id/propertyStyleLayout"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/agentTv"
+            android:drawablePadding="10dp"
+            android:text="Agent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:drawableStart="@drawable/minus"/>
+
+        <LinearLayout
+            android:id="@+id/agentLayout"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+            <CheckBox
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Appartment"
+                android:textColor="@color/black"
+                android:background="@drawable/checkbox_round_bg"
+                android:padding="4dp"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/creationDateTv"
+            android:drawablePadding="10dp"
+            android:text="Creation Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:drawableStart="@drawable/minus"/>
+
+        <LinearLayout
+            android:id="@+id/creationDateLayout"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <DatePicker
+                android:background="@color/semiBlack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/vehicleCapacityTv"
+            android:drawablePadding="10dp"
+            android:text="Vehicle Capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:fontFamily="serif-monospace"
+            android:drawableStart="@drawable/minus"/>
+
+        <LinearLayout
+            android:id="@+id/vehicleCapacityLayout"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:background="@color/semiBlack"/>
+
+            <LinearLayout
+                android:layout_margin="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="20"
+                    android:textColor="@color/black"
+                    android:gravity="end|center_vertical"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
