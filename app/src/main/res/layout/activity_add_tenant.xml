@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".pages.landlord.home.pages.tenant.AddTenant">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/addTenantTb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:padding="4dp"
+                app:title="Add Tenant"
+                android:background="@color/black"
+                app:titleTextColor="@color/white"
+                app:navigationIcon="@drawable/ic_backward_arrow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="Type"
+                        android:textColor="@color/pink"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/pinkvariation_button_bg"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:id="@+id/personChip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/pinkvariation_button_bg"
+                            android:button="@drawable/circle_ic"
+                            android:padding="5dp"
+                            android:text="Person" />
+
+                        <TextView
+                            android:id="@+id/companyChip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/pink_button_bg"
+                            android:button="@drawable/circle_ic"
+                            android:padding="5dp"
+                            android:text="Company" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/companyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="Company Name *"
+                        android:textColor="@color/pink"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/companyNameTenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:drawableEnd="@drawable/contact_ic"
+                        android:gravity="center_vertical"
+                        android:inputType="textPersonName"
+                        android:hint="Enter Company Name"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/pinkVariation" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Add tentant email address and phone number to use one click email / phone"
+                        android:textColor="@color/pink"
+                        app:drawableStartCompat="@drawable/info_ic" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="15dp"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="Email"
+                        android:textColor="@color/pink" />
+
+                    <EditText
+                        android:id="@+id/email_company_tenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/pinkVariation" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="Phone Number"
+                        android:textColor="@color/pink" />
+
+                    <EditText
+                        android:id="@+id/phone_company_tenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Phone Number"
+                        android:inputType="phone"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/pinkVariation" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="Secret key"
+                        android:textColor="@color/pink" />
+
+                    <EditText
+                        android:id="@+id/secret_key_company_tenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Mobile Number"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/pinkVariation" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="Company Address"
+                        android:textColor="@color/pink" />
+
+                    <EditText
+                        android:id="@+id/companyAddressTenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Company Address"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/pinkVariation" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="Notes"
+                        android:textColor="@color/pink" />
+
+                    <EditText
+                        android:id="@+id/notes_company_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:inputType="text"
+                        android:textColorHint="@color/pinkVariation" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="15dp"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Export Contact"
+                        android:textColor="@color/pink"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_phone"
+                        app:drawableTint="@color/pink" />
+
+                    <Button
+                        android:id="@+id/deleteTenantCompany"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/button_pink_round_bg"
+                        android:backgroundTint="@color/red"
+                        android:padding="10dp"
+                        android:text="Delete Tenant"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/personLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="Title"
+                        android:textColor="@color/pink"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/personTitleTenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:hint=""
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/pinkVariation" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="First Name *"
+                        android:textColor="@color/pink"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/first_name_person_tenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:inputType="textPersonName"
+                        android:drawableEnd="@drawable/contact_ic"
+                        android:gravity="center_vertical"
+                        android:hint="Enter First Name"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/pinkVariation" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="Last Name *"
+                        android:textColor="@color/pink"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/last_name_person_tenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:inputType="textPersonName"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Last Name"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/pinkVariation" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Add tenant email address and phone number to use one click email / phone"
+                        android:textColor="@color/pink"
+                        app:drawableStartCompat="@drawable/info_ic" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="Email"
+                        android:textColor="@color/pink"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/email_person_tenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:inputType="textEmailAddress"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Email"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/pinkVariation" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="Phone Number"
+                        android:textColor="@color/pink"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/phone_number_person_tenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:inputType="phone"
+                        android:hint="Enter Phone Number"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/pinkVariation" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="Secret key"
+                        android:textColor="@color/pink"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/secret_key_person_tenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Secret key"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/pinkVariation" />
+
+                    <TextView
+                        android:id="@+id/personDobClick"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="Click to enter DOB"
+                        android:textColor="@color/pink"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/dobPersonTenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Date of Birth"
+                        android:textColor="@color/pink"
+                        android:textColorHint="@color/pinkVariation" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="Notes"
+                        android:textColor="@color/pink"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/personNotesTenant"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:hint=""
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/pinkVariation" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="15dp"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Export Contact"
+                        android:textColor="@color/pink"
+                        android:textSize="20sp"
+                        app:drawableStartCompat="@drawable/ic_phone"
+                        app:drawableTint="@color/pink" />
+
+                    <Button
+                        android:id="@+id/personDeleteTenantButton"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/button_pink_round_bg"
+                        android:backgroundTint="@color/red"
+                        android:padding="10dp"
+                        android:text="Delete Tenant"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:layout_anchorGravity="center"
+        android:visibility="gone"
+        android:id="@+id/addTenantPb"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

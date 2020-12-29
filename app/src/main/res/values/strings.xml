@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">ProjectManagement</string>
+    <string name="hello_there">Hello There!</string>
+    <string name="to_be_filled">-</string>
+    <string name="edit">Edit</string>
+    <string name="i_accept_t_cs_and_privacy_policy">I Accept T/Cs and Privacy Policy</string>
+    <string name="log_in">Log In</string>
+    <string name="female">FEMALE</string>
+    <string name="male">MALE</string>
+    <string name="t_amp_cs"><![CDATA[T&Cs]]></string>
+    <string name="title_activity_new_property1">Map</string>
+    <string name="track_the_value_of_your_home_know_how_much_it_is_worth"><![CDATA[Track the value of your home & know how much it is worth]]></string>
+    <string name="property_location">Property Location</string>
+    <string name="property_name">Property Name</string>
+    <string name="save">Save</string>
+    <string name="multiunit_hmo_property">Multiunit / HMO Property</string>
 </resources>

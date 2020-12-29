@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "554305138006",
+    "project_id": "nipangev2",
+    "storage_bucket": "nipangev2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554305138006:android:c4781bf4f9de84f3763af7",
+        "android_client_info": {
+          "package_name": "com.example.projectmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554305138006-ud55c76gshtffklt8dtet9svfphb8rci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projectmanagement",
+            "certificate_hash": "dfc84b86564d1f472b510680476c20c428a47f23"
+          }
+        },
+        {
+          "client_id": "554305138006-dpl3bikvc9d0fefnf565ctknfvp5p56q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTYwbpR02tuPnB08vZc6ajrtavkfQZ09s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554305138006-dpl3bikvc9d0fefnf565ctknfvp5p56q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

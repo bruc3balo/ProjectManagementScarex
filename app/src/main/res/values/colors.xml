@@ -9,5 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#4C63E1</color>
     <color name="semiBlack">#63101010</color>
+    <color name="semiGray">#23101010</color>
     <color name="semiWhite">#54FFFFFF</color>
+    <color name="red">#F44336</color>
+    <color name="pink">#E91E63</color>
+    <color name="pinkVariation">#6AF14F86</color>
+    <color name="pinkDark">#d11e48</color>
 </resources>

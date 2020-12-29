@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".pages.signup.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/register_tb"
+                app:navigationIcon="@drawable/ic_left_arrow_"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/ic_house_" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Welcome to Nipange Homes"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Log rent paymens and expenses quickly"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="150dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Landlord Portal"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:padding="10dp">
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_round_bg"
+                    android:padding="25dp"
+                    android:src="@drawable/ic_facebook_" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_round_bg"
+                    android:padding="25dp"
+                    android:src="@drawable/ic_twitter_" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_round_bg"
+                    android:padding="25dp"
+                    android:src="@drawable/ic_google_plus" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableStart="@android:drawable/ic_dialog_email"
+                    android:drawableTint="@color/pink"
+                    android:gravity="center_vertical"
+                    android:hint="Email Address"
+                    android:textColor="@color/pink"
+                    android:textColorHint="@color/pink"
+                    tools:targetApi="m" />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableStart="@android:drawable/ic_lock_idle_lock"
+                    android:drawableTint="@color/pink"
+                    android:gravity="center_vertical"
+                    android:hint="Email Address"
+                    android:textColor="@color/pink"
+                    android:textColorHint="@color/pink"
+                    tools:targetApi="m" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:background="@drawable/button_trans_round_bg"
+                android:padding="15dp"
+                android:text="Register With Email"
+                android:textColor="@color/pink" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@drawable/ic_unchecked_tick_"
+                    android:gravity="end|center"
+                    android:text="I Accept "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/t_amp_cs"
+                    android:textColor="@color/pink" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="and"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/pink" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                android:gravity="end|center"
+                android:padding="4dp"
+                android:text="Contact Us"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

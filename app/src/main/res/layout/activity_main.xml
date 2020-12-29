@@ -27,6 +27,7 @@
         android:layout_gravity="end"
         android:background="@color/white"
         android:fitsSystemWindows="true"
+        app:headerLayout="@layout/proterty_reviews"
         app:itemBackground="@color/white"
         app:itemTextColor="@color/black" />
 </androidx.drawerlayout.widget.DrawerLayout>

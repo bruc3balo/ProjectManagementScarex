@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".pages.landlord.home.pages.tenant.TentantsList">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:title="Tenants"
+        android:id="@+id/landlord_tenant_tb"
+        app:titleTextColor="@color/black"
+        app:navigationIcon="@drawable/ic_left_arrow_"
+        android:padding="5dp"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        tools:listitem="@layout/tenant_list_item"
+        android:id="@+id/tentantListRv"/>
+
+</LinearLayout>

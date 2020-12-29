@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".pages.property.PropertyMortgage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:titleTextColor="@color/white"
+        android:background="@color/black"
+        app:title="Mortgage"
+        android:id="@+id/mortgageTb"
+        app:navigationIcon="@drawable/ic_left_arrow_"
+        android:padding="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text=" Your property's \n Mortgage"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:padding="5dp" />
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/receips_doc"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="false"
+            app:tint="@android:color/darker_gray" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Bank"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/bankNameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="Enter Bank Name"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/getStartDateTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:onClick="startDateShow"
+                android:gravity="center_vertical"
+                android:text="Click to enter start date"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/startDateTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="Enter Start Date"
+                android:padding="5dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/pink"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Principal Amount"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/principalAmountField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="Enter Principal Amount"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="interest Rate (%)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/interestRateField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="Enter Interest Rate (%)"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Team Expiry"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/teamExpiryField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="Enter Team Expiry"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Loan Term (years)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/loanTermField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="numberDecimal"
+                android:hint="Enter Loan Term (years)"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_margin="15dp"
+                android:drawablePadding="8dp"
+                app:drawableTint="@color/blue"
+                android:textColor="@color/black"
+                android:text="Fields below are calculated automatically. For interest only mortgages, enter 999 as the loan term"
+                app:drawableStartCompat="@drawable/info_ic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Repayment Amount"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/repaymentField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="Repayment Amount"
+                android:inputType="numberDecimal"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/getCompletionDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:onClick="completionDateShow"
+                android:text="Click to enter completion date"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/completionDateTv"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="Completion Date"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/pink"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Amount Remaining"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/amountField"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="Amount Remaining"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

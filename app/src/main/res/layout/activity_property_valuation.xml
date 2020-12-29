@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".pages.property.PropertyValuation">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/valuationTb"
+        android:background="@color/black"
+        app:navigationIcon="@drawable/ic_left_arrow_"
+        android:padding="10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text=" Your property's \n Valuation ?"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:padding="5dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_dot_circle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="false"
+            app:tint="@android:color/darker_gray" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:onClick="showPurchaseDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Click to enter Purchase Date"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/purchaseDateTv"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="Enter Purchase Date"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Purchase Price"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/purchasePrice"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="Enter Purchase Price"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Purchase Tax"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/purchaseTax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="numberDecimal"
+                android:hint="Enter Purchase Tax"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Current Valuation"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/currentValuation"
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="Enter Current Valuation"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/black"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Net Gain/Loss (%)"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/gainLoss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="Net gain/Loss (%)"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_margin="15dp"
+                android:drawablePadding="8dp"
+                app:drawableTint="@color/blue"
+                android:textColor="@color/black"
+                android:text="Net Gain/Loss are calculated automatically when Purchase Price and Current Valuation has been entered"
+                app:drawableStartCompat="@drawable/info_ic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

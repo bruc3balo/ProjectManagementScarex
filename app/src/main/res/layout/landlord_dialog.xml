@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/info_dialog_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="The sign up is for landlords only \n \n If you are a tenant contact your landlord for credentials \n \n If you are a tenant proceed"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/proceed_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Proceed"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cancel_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:background="@color/red"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

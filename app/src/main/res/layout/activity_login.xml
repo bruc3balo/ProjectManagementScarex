@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pages.login.LoginActivity">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            app:title="Login"
+            android:id="@+id/loginTb"
+            app:titleTextColor="@color/black"
+            android:background="@color/white"
+            android:padding="5dp"
+            app:navigationIcon="@drawable/ic_left_arrow_" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_margin="10dp"
+                    android:padding="6dp"
+                    android:text="@string/hello_there"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/email_login_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_circle"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/password_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_circle"
+                    android:hint="Password"
+                    android:textColor="@color/black"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/loginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/pink_button_bg"
+                        android:text="Login" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Need help?"
+                        android:textColor="@color/pink"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="10dp">
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_round_bg"
+                        android:padding="25dp"
+                        android:src="@drawable/ic_facebook_" />
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_round_bg"
+                        android:padding="25dp"
+                        android:src="@drawable/ic_twitter_" />
+
+                    <ImageButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_round_bg"
+                        android:padding="25dp"
+                        android:src="@drawable/ic_google_plus" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@android:color/transparent"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_house_" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:padding="4dp"
+                        android:text="You are not a member?"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/register_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="4dp"
+                        android:text="Register?"
+                        android:textColor="@color/pink"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/loginPb"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
